@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_support_requires_case</fullName>
+    <active>true</active>
+    <description>Customer Support profile requires case# if not User Input record type, this excludes Role "Applications Engineer"</description>
+    <errorConditionFormula>AND(
+  CreatedDate != NOW(), 
+  $User.UserRoleId != "00E33000001bQMP", 
+  OR($Profile.Name = "Quality Customer Support", $Profile.Name = "Custom Profile Thien Nguyen"),
+  ISBLANK(Case__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Case__c</errorDisplayField>
+    <errorMessage>Please include corresponding case number.</errorMessage>
+</ValidationRule>

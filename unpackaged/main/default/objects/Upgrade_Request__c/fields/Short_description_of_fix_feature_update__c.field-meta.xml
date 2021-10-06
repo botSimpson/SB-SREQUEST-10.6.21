@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Short_description_of_fix_feature_update__c</fullName>
+    <description>Problem that desired upgrade should fix</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What problem should the upgrade fix?</inlineHelpText>
+    <label>Short description of fix/feature/update</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

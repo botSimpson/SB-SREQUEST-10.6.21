@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upgrade_Aegis</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Basic</compactLayoutAssignment>
+    <label>Upgrade (AegisPOC)</label>
+    <picklistValues>
+        <picklist>Desired_Version__c</picklist>
+        <values>
+            <fullName>Current Version</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Future Version</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Match Test</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HIS_Vendor__c</picklist>
+        <values>
+            <fullName>Allscripts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloverleaf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corepoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-GATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eclipsys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ensemble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LabCorp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKesson Paragon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKesson Star</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medhost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meditech %286%2Ex%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meditech HCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meditech Magic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NTTData</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NexGen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orchard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PBAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QuadraMed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rhapsody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siemens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunquest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunquest IGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trive EMR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VISTA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation_Modification__c</picklist>
+        <values>
+            <fullName>Application Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE Swap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Operating System Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Patches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft SQL Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Swap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split Application %26 DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split Application %26 Database</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interface_Modification_Type__c</picklist>
+        <values>
+            <fullName>Add LDAP connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add cartridges%2C analytes or panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional AegisPOC instance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional devices %28current model type%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional facilities interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changes to the logic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New ADT%2FLIS interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Results interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch to existing ADT%2FLIS interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary test interface</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LIS_Vendor__c</picklist>
+        <values>
+            <fullName>Allscripts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerner Classic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerner Millennium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyberlab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPIC Beaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPIC Birdges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE%2FTripleG Centricity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keane Lab Fusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keane Optimum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LabCorp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKesson HLAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKesson Paragon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedHost HMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedSphere OpenVista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MediSolutions TD-Synergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meditech %286%2Ex%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meditech Expanse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meditech HCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meditech Magic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOVIUS Lab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPUS%2FNext Gen OpusLab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orchard Harvest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadramed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunquest AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunquest IGo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VISTA %28HL7%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VISTA %28Scripted%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Line__c</picklist>
+        <values>
+            <fullName>AegisPOC</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Sent for Creation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Targeted_Release_Version_New__c</picklist>
+        <values>
+            <fullName>AegisPOC - 3%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E10P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E12P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E14P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E7P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E8P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E8P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E9P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AegisPOC - 4%2E9P2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

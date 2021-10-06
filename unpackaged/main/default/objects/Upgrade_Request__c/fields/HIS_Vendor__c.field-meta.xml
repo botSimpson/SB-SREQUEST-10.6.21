@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HIS_Vendor__c</fullName>
+    <externalId>false</externalId>
+    <label>HIS Vendor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allscripts</fullName>
+                <default>false</default>
+                <label>Allscripts</label>
+            </value>
+            <value>
+                <fullName>Cerner</fullName>
+                <default>false</default>
+                <label>Cerner</label>
+            </value>
+            <value>
+                <fullName>Cloverleaf</fullName>
+                <default>false</default>
+                <label>Cloverleaf</label>
+            </value>
+            <value>
+                <fullName>Corepoint</fullName>
+                <default>false</default>
+                <label>Corepoint</label>
+            </value>
+            <value>
+                <fullName>Eclipsys</fullName>
+                <default>false</default>
+                <label>Eclipsys</label>
+            </value>
+            <value>
+                <fullName>E-GATE</fullName>
+                <default>false</default>
+                <label>E-GATE</label>
+            </value>
+            <value>
+                <fullName>Engine</fullName>
+                <default>false</default>
+                <label>Engine</label>
+            </value>
+            <value>
+                <fullName>Ensemble</fullName>
+                <default>false</default>
+                <label>Ensemble</label>
+            </value>
+            <value>
+                <fullName>EPIC</fullName>
+                <default>false</default>
+                <label>EPIC</label>
+            </value>
+            <value>
+                <fullName>GE Healthcare</fullName>
+                <default>false</default>
+                <label>GE Healthcare</label>
+            </value>
+            <value>
+                <fullName>Invision</fullName>
+                <default>false</default>
+                <label>Invision</label>
+            </value>
+            <value>
+                <fullName>LabCorp</fullName>
+                <default>false</default>
+                <label>LabCorp</label>
+            </value>
+            <value>
+                <fullName>McKesson Paragon</fullName>
+                <default>false</default>
+                <label>McKesson Paragon</label>
+            </value>
+            <value>
+                <fullName>McKesson Star</fullName>
+                <default>false</default>
+                <label>McKesson Star</label>
+            </value>
+            <value>
+                <fullName>Medhost</fullName>
+                <default>false</default>
+                <label>Medhost</label>
+            </value>
+            <value>
+                <fullName>Meditech (6.x)</fullName>
+                <default>false</default>
+                <label>Meditech (6.x)</label>
+            </value>
+            <value>
+                <fullName>Meditech HCA</fullName>
+                <default>false</default>
+                <label>Meditech HCA</label>
+            </value>
+            <value>
+                <fullName>Meditech Magic</fullName>
+                <default>false</default>
+                <label>Meditech Magic</label>
+            </value>
+            <value>
+                <fullName>NexGen</fullName>
+                <default>false</default>
+                <label>NexGen</label>
+            </value>
+            <value>
+                <fullName>Novius</fullName>
+                <default>false</default>
+                <label>Novius</label>
+            </value>
+            <value>
+                <fullName>NTTData</fullName>
+                <default>false</default>
+                <label>NTTData</label>
+            </value>
+            <value>
+                <fullName>Orchard</fullName>
+                <default>false</default>
+                <label>Orchard</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PBAR</fullName>
+                <default>false</default>
+                <label>PBAR</label>
+            </value>
+            <value>
+                <fullName>QuadraMed</fullName>
+                <default>false</default>
+                <label>QuadraMed</label>
+            </value>
+            <value>
+                <fullName>Rhapsody</fullName>
+                <default>false</default>
+                <label>Rhapsody</label>
+            </value>
+            <value>
+                <fullName>SCC Soft</fullName>
+                <default>false</default>
+                <label>SCC Soft</label>
+            </value>
+            <value>
+                <fullName>Siemens</fullName>
+                <default>false</default>
+                <label>Siemens</label>
+            </value>
+            <value>
+                <fullName>Sunquest</fullName>
+                <default>false</default>
+                <label>Sunquest</label>
+            </value>
+            <value>
+                <fullName>Sunquest IGO</fullName>
+                <default>false</default>
+                <label>Sunquest IGO</label>
+            </value>
+            <value>
+                <fullName>Trive EMR</fullName>
+                <default>false</default>
+                <label>Trive EMR</label>
+            </value>
+            <value>
+                <fullName>VISTA</fullName>
+                <default>false</default>
+                <label>VISTA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

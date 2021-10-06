@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Match_Test_required_field_TEST_RCS</fullName>
+    <active>true</active>
+    <description>If Desired Version = Match Test, field Test RCS must be filled out</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Desired_Version__c, "Match Test"), 
+RALS_Software_System__c = null)</errorConditionFormula>
+    <errorMessage>If upgrade version requested is "Match Test", the field Test RCS must be filled out.</errorMessage>
+</ValidationRule>

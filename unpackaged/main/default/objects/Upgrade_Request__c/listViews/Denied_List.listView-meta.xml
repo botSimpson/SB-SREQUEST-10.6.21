@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Denied_List</fullName>
+    <columns>NAME</columns>
+    <columns>Account_f__c</columns>
+    <columns>RCS_ID__c</columns>
+    <columns>Reason_for_Upgrade__c</columns>
+    <columns>Server__c</columns>
+    <columns>Status__c</columns>
+    <columns>Created_By__c</columns>
+    <columns>Created_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Denied</value>
+    </filters>
+    <label>Denied</label>
+</ListView>

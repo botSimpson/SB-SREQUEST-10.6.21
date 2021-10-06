@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interface_Modification_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Interface Modification Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Installation_Modification__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add cartridges, analytes or panels</fullName>
+                <default>false</default>
+                <label>Add cartridges, analytes or panels</label>
+            </value>
+            <value>
+                <fullName>New ADT/LIS interface</fullName>
+                <default>false</default>
+                <label>New ADT/LIS interface</label>
+            </value>
+            <value>
+                <fullName>Switch to existing ADT/LIS interface</fullName>
+                <default>false</default>
+                <label>Switch to existing ADT/LIS interface</label>
+            </value>
+            <value>
+                <fullName>Changes to the logic</fullName>
+                <default>false</default>
+                <label>Changes to the logic</label>
+            </value>
+            <value>
+                <fullName>Temporary test interface</fullName>
+                <default>false</default>
+                <label>Temporary test interface</label>
+            </value>
+            <value>
+                <fullName>Additional devices (current model type)</fullName>
+                <default>false</default>
+                <label>Additional devices (current model type)</label>
+            </value>
+            <value>
+                <fullName>Results interface</fullName>
+                <default>false</default>
+                <label>Results interface</label>
+            </value>
+            <value>
+                <fullName>Add LDAP connection</fullName>
+                <default>false</default>
+                <label>Add LDAP connection</label>
+            </value>
+            <value>
+                <fullName>Additional facilities interface</fullName>
+                <default>false</default>
+                <label>Additional facilities interface</label>
+            </value>
+            <value>
+                <fullName>Additional AegisPOC instance</fullName>
+                <default>false</default>
+                <label>Additional AegisPOC instance</label>
+            </value>
+            <value>
+                <fullName>Other modification</fullName>
+                <default>false</default>
+                <label>Other modification</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Add cartridges, analytes or panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>New ADT/LIS interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Switch to existing ADT/LIS interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Changes to the logic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Temporary test interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Additional devices (current model type)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Results interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Add LDAP connection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Additional facilities interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Additional AegisPOC instance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interface Modification</controllingFieldValue>
+            <valueName>Other modification</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

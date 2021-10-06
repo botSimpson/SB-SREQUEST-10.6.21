@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Denied</fullName>
+        <description>Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Implementation_Project_Templates/Upgrade_Request_Denied</template>
+    </alerts>
+    <alerts>
+        <fullName>Limited_Launch_Approval</fullName>
+        <description>Limited Launch Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bruce.morgan@alere.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Implementation_Project_Templates/Limited_Launch</template>
+    </alerts>
+    <alerts>
+        <fullName>Upgrade_Request_Limited_Launch_Denied</fullName>
+        <description>Upgrade Request- Limited Launch Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>john.pinter@alere.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>teresa.edsall2@alere.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Upgrade_Requests/Limited_Launch_denied</template>
+    </alerts>
+    <alerts>
+        <fullName>new_request</fullName>
+        <description>Email to Implementation Supervisor and b/u for new upgrade request</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joshua.cypher2@alere.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kristina.dillon@alere.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>teresa.edsall2@alere.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Implementation_Project_Templates/New_Upgrade_Request</template>
+    </alerts>
+</Workflow>

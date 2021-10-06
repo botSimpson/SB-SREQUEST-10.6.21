@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LIS_Vendor__c</fullName>
+    <externalId>false</externalId>
+    <label>LIS Vendor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allscripts</fullName>
+                <default>false</default>
+                <label>Allscripts</label>
+            </value>
+            <value>
+                <fullName>Cerner Classic</fullName>
+                <default>false</default>
+                <label>Cerner Classic</label>
+            </value>
+            <value>
+                <fullName>Cerner Millennium</fullName>
+                <default>false</default>
+                <label>Cerner Millennium</label>
+            </value>
+            <value>
+                <fullName>CHCS</fullName>
+                <default>false</default>
+                <label>CHCS</label>
+            </value>
+            <value>
+                <fullName>Cyberlab</fullName>
+                <default>false</default>
+                <label>Cyberlab</label>
+            </value>
+            <value>
+                <fullName>EPIC Beaker</fullName>
+                <default>false</default>
+                <label>EPIC Beaker</label>
+            </value>
+            <value>
+                <fullName>EPIC Birdges</fullName>
+                <default>false</default>
+                <label>EPIC Birdges</label>
+            </value>
+            <value>
+                <fullName>Evident</fullName>
+                <default>false</default>
+                <label>Evident</label>
+            </value>
+            <value>
+                <fullName>GE/TripleG Centricity</fullName>
+                <default>false</default>
+                <label>GE/TripleG Centricity</label>
+            </value>
+            <value>
+                <fullName>Keane Lab Fusion</fullName>
+                <default>false</default>
+                <label>Keane Lab Fusion</label>
+            </value>
+            <value>
+                <fullName>Keane Optimum</fullName>
+                <default>false</default>
+                <label>Keane Optimum</label>
+            </value>
+            <value>
+                <fullName>LabCorp</fullName>
+                <default>false</default>
+                <label>LabCorp</label>
+            </value>
+            <value>
+                <fullName>McKesson HLAB</fullName>
+                <default>false</default>
+                <label>McKesson HLAB</label>
+            </value>
+            <value>
+                <fullName>McKesson Paragon</fullName>
+                <default>false</default>
+                <label>McKesson Paragon</label>
+            </value>
+            <value>
+                <fullName>MedHost HMS</fullName>
+                <default>false</default>
+                <label>MedHost HMS</label>
+            </value>
+            <value>
+                <fullName>MediSolutions TD-Synergy</fullName>
+                <default>false</default>
+                <label>MediSolutions TD-Synergy</label>
+            </value>
+            <value>
+                <fullName>Meditech Expanse</fullName>
+                <default>false</default>
+                <label>Meditech Expanse</label>
+            </value>
+            <value>
+                <fullName>Meditech (6.x)</fullName>
+                <default>false</default>
+                <label>Meditech (6.x)</label>
+            </value>
+            <value>
+                <fullName>Meditech HCA</fullName>
+                <default>false</default>
+                <label>Meditech HCA</label>
+            </value>
+            <value>
+                <fullName>Meditech Magic</fullName>
+                <default>false</default>
+                <label>Meditech Magic</label>
+            </value>
+            <value>
+                <fullName>MedSphere OpenVista</fullName>
+                <default>false</default>
+                <label>MedSphere OpenVista</label>
+            </value>
+            <value>
+                <fullName>NOVIUS Lab</fullName>
+                <default>false</default>
+                <label>NOVIUS Lab</label>
+            </value>
+            <value>
+                <fullName>OPUS/Next Gen OpusLab</fullName>
+                <default>false</default>
+                <label>OPUS/Next Gen OpusLab</label>
+            </value>
+            <value>
+                <fullName>Orchard Harvest</fullName>
+                <default>false</default>
+                <label>Orchard Harvest</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Quadramed</fullName>
+                <default>false</default>
+                <label>Quadramed</label>
+            </value>
+            <value>
+                <fullName>RPMS</fullName>
+                <default>false</default>
+                <label>RPMS</label>
+            </value>
+            <value>
+                <fullName>SCC Soft</fullName>
+                <default>false</default>
+                <label>SCC Soft</label>
+            </value>
+            <value>
+                <fullName>Sunquest AI</fullName>
+                <default>false</default>
+                <label>Sunquest AI</label>
+            </value>
+            <value>
+                <fullName>Sunquest IGo</fullName>
+                <default>false</default>
+                <label>Sunquest IGo</label>
+            </value>
+            <value>
+                <fullName>VISTA (HL7)</fullName>
+                <default>false</default>
+                <label>VISTA (HL7)</label>
+            </value>
+            <value>
+                <fullName>VISTA (Scripted)</fullName>
+                <default>false</default>
+                <label>VISTA (Scripted)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

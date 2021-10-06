@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limited_Launch</fullName>
+    <columns>NAME</columns>
+    <columns>Created_Date__c</columns>
+    <columns>Account_f__c</columns>
+    <columns>Desired_Version__c</columns>
+    <columns>RCS_ID__c</columns>
+    <columns>Status__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Limited Launch</value>
+    </filters>
+    <label>Limited Launch</label>
+</ListView>

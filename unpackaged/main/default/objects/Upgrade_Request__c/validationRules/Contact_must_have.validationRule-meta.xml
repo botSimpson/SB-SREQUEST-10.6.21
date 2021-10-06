@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_must_have</fullName>
+    <active>true</active>
+    <description>Must have at least one Contacts and Roles related record</description>
+    <errorConditionFormula>And( 
+CreatedDate != NOW(), 
+ISBLANK(Contact__c ),
+Contact_count__c &lt; 1
+)</errorConditionFormula>
+    <errorDisplayField>Contact__c</errorDisplayField>
+    <errorMessage>Please include at least one contact.  Additional contacts can be entered on the following page.</errorMessage>
+</ValidationRule>

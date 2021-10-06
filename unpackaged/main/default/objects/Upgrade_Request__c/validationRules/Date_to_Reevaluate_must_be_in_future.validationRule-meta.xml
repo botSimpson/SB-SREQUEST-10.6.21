@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_to_Reevaluate_must_be_in_future</fullName>
+    <active>true</active>
+    <errorConditionFormula>Date_to_Reevaluate__c   &lt;   TODAY()</errorConditionFormula>
+    <errorDisplayField>Date_to_Reevaluate__c</errorDisplayField>
+    <errorMessage>Date to Reevaluate must be in the future</errorMessage>
+</ValidationRule>

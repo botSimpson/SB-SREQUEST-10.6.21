@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Denied_must_have_reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>And( 
+ ISPICKVAL( Status__c , "Denied") ,  
+ ISBLANK( Reason_Denied__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Reason_Denied__c</errorDisplayField>
+    <errorMessage>Provide the reason this upgrade request is Denied.</errorMessage>
+</ValidationRule>

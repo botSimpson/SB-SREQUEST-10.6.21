@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Basic</fullName>
+    <fields>Name</fields>
+    <fields>Account_f__c</fields>
+    <fields>Installation_Modification__c</fields>
+    <fields>Server__c</fields>
+    <fields>Server_Type__c</fields>
+    <fields>Status__c</fields>
+    <fields>RCS_ID__c</fields>
+    <label>Basic</label>
+</CompactLayout>

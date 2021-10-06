@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Targeted_Release_Version_New__c</fullName>
+    <externalId>false</externalId>
+    <label>Targeted Release Version</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sympheos</fullName>
+                <default>false</default>
+                <label>Sympheos</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.10</fullName>
+                <default>false</default>
+                <label>Web3 - 5.10</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.11</fullName>
+                <default>false</default>
+                <label>Web3 - 5.11</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.12</fullName>
+                <default>false</default>
+                <label>Web3 - 5.12</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.13</fullName>
+                <default>false</default>
+                <label>Web3 - 5.13</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.14</fullName>
+                <default>false</default>
+                <label>Web3 - 5.14</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.15</fullName>
+                <default>false</default>
+                <label>Web3 - 5.15</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.16</fullName>
+                <default>false</default>
+                <label>Web3 - 5.16</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.17</fullName>
+                <default>false</default>
+                <label>Web3 - 5.17</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.18</fullName>
+                <default>false</default>
+                <label>Web3 - 5.18</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.19</fullName>
+                <default>false</default>
+                <label>Web3 - 5.19</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.8</fullName>
+                <default>false</default>
+                <label>Web3 - 5.8</label>
+            </value>
+            <value>
+                <fullName>Web3 - 5.9</fullName>
+                <default>false</default>
+                <label>Web3 - 5.9</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0 SP1</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0 SP1</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0 SP2</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0 SP2</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0 SP3</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0 SP3</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0 SP4</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0 SP4</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0 SP5</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0 SP5</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0 SP6</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0 SP6</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0 SP7</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0 SP7</label>
+            </value>
+            <value>
+                <fullName>Web3 - 6.0 SP8</fullName>
+                <default>false</default>
+                <label>Web3 - 6.0 SP8</label>
+            </value>
+            <value>
+                <fullName>RALS LiNK</fullName>
+                <default>false</default>
+                <label>RALS LiNK</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 3.2</fullName>
+                <default>false</default>
+                <label>AegisPOC - 3.2</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.1</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.1</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.2</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.2</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.5</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.5</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.6</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.6</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.7</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.7</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.7P1</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.7P1</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.8</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.8</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.8P1</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.8P1</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.8P2</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.8P2</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.9</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.9</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.9P1</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.9P1</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.9P2</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.9P2</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.10</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.10</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.10P1</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.10P1</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.11</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.11</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.12</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.12</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.12P1</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.12P1</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.13</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.13</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.14</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.14</label>
+            </value>
+            <value>
+                <fullName>AegisPOC - 4.14P1</fullName>
+                <default>false</default>
+                <label>AegisPOC - 4.14P1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

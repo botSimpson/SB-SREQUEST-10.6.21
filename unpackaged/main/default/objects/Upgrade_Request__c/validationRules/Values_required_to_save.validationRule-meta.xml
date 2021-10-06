@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Values_required_to_save</fullName>
+    <active>false</active>
+    <description>Require Desired Version, Reason for Upgrade, and Contact if record type is Requested.</description>
+    <errorConditionFormula>And( 
+ CreatedDate !=  NOW(),
+OR(  
+ISPICKVAL (Desired_Version__c,""), 
+ISBLANK(Reason_for_Upgrade__c), 
+ISBLANK(Targeted_Release_version__c)
+
+) 
+)</errorConditionFormula>
+    <errorMessage>Please make sure the following fields are filled out:  Desired Version, Reason for Upgrade, and Targeted Release Version.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_Modification__c</fullName>
+    <externalId>false</externalId>
+    <label>Installation Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Application Upgrade</fullName>
+                <default>false</default>
+                <label>Application Upgrade</label>
+            </value>
+            <value>
+                <fullName>Interface Modification</fullName>
+                <default>false</default>
+                <label>Interface Modification</label>
+            </value>
+            <value>
+                <fullName>Microsoft Patches</fullName>
+                <default>false</default>
+                <label>Microsoft Patches</label>
+            </value>
+            <value>
+                <fullName>Microsoft SQL Upgrade</fullName>
+                <default>false</default>
+                <label>Microsoft SQL Upgrade</label>
+            </value>
+            <value>
+                <fullName>Microsoft Operating System Upgrade</fullName>
+                <default>false</default>
+                <label>Microsoft Operating System Upgrade</label>
+            </value>
+            <value>
+                <fullName>Server Swap</fullName>
+                <default>false</default>
+                <label>Server Swap</label>
+            </value>
+            <value>
+                <fullName>Split Application &amp; Database</fullName>
+                <default>false</default>
+                <label>Split Application &amp; Database</label>
+            </value>
+            <value>
+                <fullName>DE Upgrade</fullName>
+                <default>false</default>
+                <label>DE Upgrade</label>
+            </value>
+            <value>
+                <fullName>Split Application &amp; DE</fullName>
+                <default>false</default>
+                <label>Split Application &amp; DE</label>
+            </value>
+            <value>
+                <fullName>DE Swap</fullName>
+                <default>false</default>
+                <label>DE Swap</label>
+            </value>
+            <value>
+                <fullName>Other Modification</fullName>
+                <default>false</default>
+                <label>Other Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

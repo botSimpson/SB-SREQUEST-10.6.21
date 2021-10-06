@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Server_Decommissioned</fullName>
+    <active>true</active>
+    <description>No upgrade if server is decommissioned</description>
+    <errorConditionFormula>ISPICKVAL(Server__r.Server_Status__c, "Decommissioned")</errorConditionFormula>
+    <errorMessage>This server is decommissioned.  Please verify you are trying to upgrade the correct server on the RCS.</errorMessage>
+</ValidationRule>
