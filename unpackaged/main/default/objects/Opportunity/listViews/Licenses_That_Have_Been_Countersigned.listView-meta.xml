@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Licenses_That_Have_Been_Countersigned</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Billing_City__c</columns>
+    <columns>Billing_State__c</columns>
+    <columns>Product_Formula__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Countersigned_Has_Been_Uploaded__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>* Licenses That Have Been Countersigned</label>
+</ListView>

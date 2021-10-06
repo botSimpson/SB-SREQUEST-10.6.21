@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LA_Payment_Method_required_4_approval</fullName>
+    <active>true</active>
+    <description>Will require the"Payment Arrangement" field to have a value in it to be sent for license approval</description>
+    <errorConditionFormula>AND(
+ ISPICKVAL(StageName, "Ready For Closeout Approval"),
+ISBLANK(Payment_Arrangement__c),
+RecordTypeId &lt;&gt; "0120b000000VQRx", 
+Amount  &gt; 1)</errorConditionFormula>
+    <errorMessage>The "payment arrangementl" field must be populated,</errorMessage>
+</ValidationRule>

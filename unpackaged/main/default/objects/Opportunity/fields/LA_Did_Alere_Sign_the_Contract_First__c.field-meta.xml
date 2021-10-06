@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LA_Did_Alere_Sign_the_Contract_First__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field that will track if Alere signed the signed agreement first</description>
+    <externalId>false</externalId>
+    <label>Did Alere Sign the Contract First</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

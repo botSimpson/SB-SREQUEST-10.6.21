@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specific_requirements__c</fullName>
+    <description>Requested by Ludo on 2/18/2019 - To be used to categorize risk.  Per Ludo, should not be a required field.  This is for reporting purposes only.</description>
+    <externalId>false</externalId>
+    <label>Specific requirements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Driver to be built</fullName>
+                <default>false</default>
+                <label>Driver to be built</label>
+            </value>
+            <value>
+                <fullName>Feature to be built</fullName>
+                <default>false</default>
+                <label>Feature to be built</label>
+            </value>
+            <value>
+                <fullName>Both</fullName>
+                <default>false</default>
+                <label>Both</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

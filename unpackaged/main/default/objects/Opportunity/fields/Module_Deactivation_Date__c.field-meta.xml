@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Module_Deactivation_Date__c</fullName>
+    <description>Field to track the date in which we will cut off a delinquent account.  This field will be used in the Deactivattion scheduled templates going out at the 30-day past due, with the actual cut off date at 60day past due mark</description>
+    <externalId>false</externalId>
+    <label>Module Deactivation Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Countersigned_Has_Been_Uploaded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field that will track if Contracts Administrator has Uploaded Countersigned Agreement.   Will trigger workflow to have Account reps forward the countersigned agreements to the right person</description>
+    <externalId>false</externalId>
+    <label>Countersigned Has Been Uploaded</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Closed_Lost_Opportunity</fullName>
+    <availability>online</availability>
+    <description>Button to create Closed Lost Opportunities in cases where customer wants to connect a device where we don't haev the device connection</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Closed Lost Opportunity</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/006/e?RecordType=012400000009k2j&amp;CF00N400000029X7a={! Contract.ContractNumber}&amp;CF00N400000029X7a_lkid={!Contract.Id}&amp;retURL=%2F{!Opportunity.Id} &amp;&amp;opp11 ="Closed Lost"&amp;opp7=10000&amp;&amp;opp9 = {!TODAY()}</url>
+</WebLink>

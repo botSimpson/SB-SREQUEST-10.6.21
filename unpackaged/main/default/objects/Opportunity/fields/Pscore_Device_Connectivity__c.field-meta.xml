@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pscore_Device_Connectivity__c</fullName>
+    <description>Formula to derive a score based on complexity of connecting device to RALS</description>
+    <externalId>false</externalId>
+    <formula>CASE(Contract.RALS_Module__c , 
+"Abbott i-STAT POC", 0, 
+"MTE - Manual Test Entry", 0, 
+"Accriva Blood Oximeter (ITC Avoximeter)", 0, 
+"Alere HbA1c", 0, 
+"Alere Cholesterol/ HDL/Triglycerides", 0, 
+"NOVA Creatinine", 0, 
+"NOVA Glucose", 0, 
+"NOVA Lactate", 0, 
+"Alere Influenza A&amp;B", 2, 
+"Alere Hemostasis/Hematology/Immunoassay", 2, 
+"Hemocue Glucose", 2, 
+"HemoCue Hemoglobin", 2, 
+"Medtronic Coagulation ACT Plus", 2, 
+"Medtronic Coagulation HMS PLUS", 2, 
+"Radiometer Blood Gas", 2, 
+"Roche Glucose", 2, 
+"Roche Blood Gas", 2, 
+"Abbott i-STAT POC", 0, 
+2)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>* Pscore Device Connectivity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

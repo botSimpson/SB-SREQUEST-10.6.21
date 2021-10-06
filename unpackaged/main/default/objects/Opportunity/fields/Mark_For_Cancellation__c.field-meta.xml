@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mark_For_Cancellation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to document an orders that need to go through a Order Cancellation Process</description>
+    <externalId>false</externalId>
+    <label>Mark For Cancellation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

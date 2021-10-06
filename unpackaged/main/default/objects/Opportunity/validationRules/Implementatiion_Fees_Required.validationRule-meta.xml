@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Implementatiion_Fees_Required</fullName>
+    <active>true</active>
+    <description>Validation rule that will require that the implementation fees are documented in a separate field anytime a new business or renewal with platform, device change is pushed forward for license approval</description>
+    <errorConditionFormula>AND( 
+OR( 
+ISPICKVAL( New_Contract_or_Renewal__c , "New Business"),
+ISPICKVAL(New_Contract_or_Renewal__c, "Renewal With Device Change"),
+ISPICKVAL(New_Contract_or_Renewal__c, "Renewal With Platform Change(ie..Plus &gt; Freedom)")),
+ISPICKVAL( StageName , "Ready For Closeout Approval"),
+ISBLANK( Implementation_Fees__c ) 
+)</errorConditionFormula>
+    <errorMessage>* We Need to Track Implementation Fees Associated With This Type of Transaction.  Enter $0.00 If There Were No Implementation Fees *</errorMessage>
+</ValidationRule>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Status__c</fullName>
+    <description>This field will help track "where we are"with a new install or renewal.</description>
+    <externalId>false</externalId>
+    <label>Project Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>New_Contract_or_Renewal__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Activity</fullName>
+                <default>true</default>
+                <label>No Activity</label>
+            </value>
+            <value>
+                <fullName>Account Contacted Re: Renewal</fullName>
+                <default>false</default>
+                <label>Account Contacted Re: Renewal</label>
+            </value>
+            <value>
+                <fullName>Pricing sent to RBM or Vendor rep</fullName>
+                <default>false</default>
+                <label>Pricing sent to RBM or Vendor rep</label>
+            </value>
+            <value>
+                <fullName>Pricing Options Sent to Account</fullName>
+                <default>false</default>
+                <label>Pricing Options Sent to Account</label>
+            </value>
+            <value>
+                <fullName>License/Exhibit A Requested</fullName>
+                <default>false</default>
+                <label>License/Exhibit A Requested</label>
+            </value>
+            <value>
+                <fullName>License/Exhibit Sent Out</fullName>
+                <default>false</default>
+                <label>License/Exhibit Sent Out</label>
+            </value>
+            <value>
+                <fullName>Verbal Close</fullName>
+                <default>false</default>
+                <label>Verbal Close</label>
+            </value>
+            <value>
+                <fullName>Purchase Order Received</fullName>
+                <default>false</default>
+                <label>Purchase Order Received</label>
+            </value>
+            <value>
+                <fullName>PO Received, need License Agreement</fullName>
+                <default>false</default>
+                <label>PO Received, need License Agreement</label>
+            </value>
+            <value>
+                <fullName>Signed License Agreement</fullName>
+                <default>false</default>
+                <label>Signed License Agreement</label>
+            </value>
+            <value>
+                <fullName>Signed exhibit A, Need PO</fullName>
+                <default>false</default>
+                <label>Signed exhibit A, Need PO</label>
+            </value>
+            <value>
+                <fullName>POF processed to Operations(Closed)</fullName>
+                <default>false</default>
+                <label>POF processed to Operations(Closed)</label>
+            </value>
+            <value>
+                <fullName>Project Manager Assigned - ISWs Sent</fullName>
+                <default>false</default>
+                <label>Project Manager Assigned - ISWs Sent</label>
+            </value>
+            <value>
+                <fullName>Phase I ISW completed by account</fullName>
+                <default>false</default>
+                <label>Phase I ISW completed by account</label>
+            </value>
+            <value>
+                <fullName>Phase II ISW completed by Account</fullName>
+                <default>false</default>
+                <label>Phase II ISW completed by Account</label>
+            </value>
+            <value>
+                <fullName>Install Scheduled</fullName>
+                <default>false</default>
+                <label>Install Scheduled</label>
+            </value>
+            <value>
+                <fullName>Installation Complete, Needs Interface</fullName>
+                <default>false</default>
+                <label>Installation Complete, Needs Interface</label>
+            </value>
+            <value>
+                <fullName>Interface Engineer Assigned</fullName>
+                <default>false</default>
+                <label>Interface Engineer Assigned</label>
+            </value>
+            <value>
+                <fullName>Integrated Testing</fullName>
+                <default>false</default>
+                <label>Integrated Testing</label>
+            </value>
+            <value>
+                <fullName>Installation Complete, Interface Live</fullName>
+                <default>false</default>
+                <label>Installation Complete, Interface Live</label>
+            </value>
+            <value>
+                <fullName>ADS Quote &amp; Directions sent to customer</fullName>
+                <default>false</default>
+                <label>ADS Quote &amp; Directions sent to customer</label>
+            </value>
+            <value>
+                <fullName>worksheet completed, need PO</fullName>
+                <default>false</default>
+                <label>worksheet completed, need PO</label>
+            </value>
+            <value>
+                <fullName>PO received, need worksheet</fullName>
+                <default>false</default>
+                <label>PO received, need worksheet</label>
+            </value>
+            <value>
+                <fullName>PO &amp; worksheet received</fullName>
+                <default>false</default>
+                <label>PO &amp; worksheet received</label>
+            </value>
+            <value>
+                <fullName>Order sent to Service Dept.</fullName>
+                <default>false</default>
+                <label>Order sent to Service Dept.</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Pricing sent to RBM or Vendor rep</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Pricing Options Sent to Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>License/Exhibit A Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>License/Exhibit Sent Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Verbal Close</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Purchase Order Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>PO Received, need License Agreement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Signed License Agreement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Signed exhibit A, Need PO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>POF processed to Operations(Closed)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Project Manager Assigned - ISWs Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Phase I ISW completed by account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Phase II ISW completed by Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Install Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Installation Complete, Needs Interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Interface Engineer Assigned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Integrated Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Installation Complete, Interface Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>No Activity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>Account Contacted Re: Renewal</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

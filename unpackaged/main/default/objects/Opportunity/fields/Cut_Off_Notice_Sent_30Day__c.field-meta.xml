@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cut_Off_Notice_Sent_30Day__c</fullName>
+    <description>This Field will track the delinquent accounts that we've sent 30-Day cut off notices to.  The notice will give them 30 days to send a PO for past due renewals or have those modules disabled.</description>
+    <externalId>false</externalId>
+    <label>30 Day Cut-Off Notice Sent?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Auto_Number__c</fullName>
+    <description>Autonumber that will serve two purposes.  Will be an external identifier that can be used by integrated systems such as finance.  Will also serve as the basis for the unique identifier for the name of the opportunity.</description>
+    <displayFormat>O-{MM}{DD}{YY} {00000}</displayFormat>
+    <externalId>true</externalId>
+    <label>Opportunity Auto Number</label>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>

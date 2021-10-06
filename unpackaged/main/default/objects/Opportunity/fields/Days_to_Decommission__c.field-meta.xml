@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_to_Decommission__c</fullName>
+    <description>Field that will track the number of days before the decommission date for a particulat modular.  Will trigger the tasks of sending DeCommission Scheduled Notice as well as the actual order to Operations to cut off</description>
+    <externalId>false</externalId>
+    <formula>Module_Deactivation_Date__c  - TODAY()</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days to Decommission</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

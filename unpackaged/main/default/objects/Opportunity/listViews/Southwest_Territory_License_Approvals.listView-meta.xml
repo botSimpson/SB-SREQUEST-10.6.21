@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Southwest_Territory_License_Approvals</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Billing_City__c</columns>
+    <columns>Billing_State__c</columns>
+    <columns>Product_Formula__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Status_Of_Approval_Request__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status_Of_Approval_Request__c</field>
+        <operation>equals</operation>
+        <value>Approval Submitted,"Approved By Legal, Need Finance and Site Manager Approval"</value>
+    </filters>
+    <label>** Southwest Territory License Approvals</label>
+</ListView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_For_ProjectCreation</fullName>
+    <columns>High_Priority_For_Immediate_Assignment__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Product_Formula__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Operations_Review_Completed__c</columns>
+    <columns>Project_Has_Been_Created__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Ready_For_Project_Creation__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>*  Ready For Project Creation</label>
+</ListView>

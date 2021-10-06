@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_Person_Who_Signed_For_Letter__c</fullName>
+    <description>Field that will capture the name and/or location associated with the signing for the certified letter or UPS delivery.  Data can be used to verify that the letter was received at the hospital even if the person it was addressed to didn't get the message.</description>
+    <externalId>false</externalId>
+    <label>Name of Person Who Signed For Letter</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

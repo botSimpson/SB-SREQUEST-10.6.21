@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADS_Validation_Project_1</fullName>
+    <active>true</active>
+    <description>Validation rules that will require that sales fill out basic information before the ADS Validation project can be sent to finance for billing.....</description>
+    <errorConditionFormula>AND(
+RecordTypeId="0120b000000MJeL",
+Send_To_Finance__c = TRUE,
+OR(
+ISBLANK(Amount),
+ISBLANK(License_Term_Years__c),
+ISBLANK(Quote_Number__c),
+ISBLANK(Number_of_Meters__c)))</errorConditionFormula>
+    <errorMessage>Before You Pass along to Finance, you must populate the following:
+
+
+- - Amount , Quote #, License Term, and Number of Meters</errorMessage>
+</ValidationRule>

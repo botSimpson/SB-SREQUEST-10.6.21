@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latest_Note__c</fullName>
+    <description>New field to store the latest notes and next step field.  The field we were using was the standard field called "next step"  which had a 255 charatcer limit and could not be edited....</description>
+    <externalId>false</externalId>
+    <label>Latest Note</label>
+    <length>500</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

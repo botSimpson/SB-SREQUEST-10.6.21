@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Expansion_OpportunityApril2014</fullName>
+    <availability>online</availability>
+    <description>Button that will product a expansion opportunity with record type of new April 2014 Record type.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>~ New Expansion Opportunity ~</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/006/e?CF00N400000029X7a={! Contract.ContractNumber}&amp;CF00N400000029X7a_lkid={!Contract.Id}&amp;retURL=%2F{!Opportunity.Id}&amp;opp4={! Contract.Account }&amp;opp4_lkid={! Contract.AccountId }&amp;CF00N400000029Wy4={!Contract.RALS_System__c}&amp;CF00N400000029Wy4_lkid={!Contract.RALS_SystemId__c}&amp;Reco​rdType=012400000009kiw&amp;00N40000002bnvB="Meters, Cartridges, Interfaces being added to existing Contract"&amp;00N40000001VmJ9="Expansion of Existing Module License"</url>
+</WebLink>

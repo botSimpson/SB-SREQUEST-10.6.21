@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Project_Complexity_Score__c</fullName>
+    <description>Formual to derive a total complexity score for prospective projects.  Can be used to assess project load, relationships between complexity and project timelines, and to assess if we have priced our modules appropriately</description>
+    <externalId>false</externalId>
+    <formula>1 + Pscore_Device_Connectivity__c + Pscore_Device_Interfacing__c + Pscore_Hospitals__c + Pscore_Interface__c + Pscore_Lifecyle__c + Pscore_Migration_Platform_Change__c + PScore_Modules__c + Pscore_New_Installation__c + Pscore_Non_Standard__c + Pscore_Ownership__c + PScore_Test_System__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>*Total Project Complexity Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

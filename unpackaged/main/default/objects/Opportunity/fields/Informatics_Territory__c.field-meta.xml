@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informatics_Territory__c</fullName>
+    <description>Picklist field that will be populated automatically, to mark the territory associated opportunity's account.   Will be used in Opportunity sharing rules to open up vieweship of opportunities to all opportunitties within a opportunity</description>
+    <externalId>false</externalId>
+    <label>Informatics Territory</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Territory_List</valueSetName>
+    </valueSet>
+</CustomField>

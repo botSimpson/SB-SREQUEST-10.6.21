@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Business_Category__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( New_Installation_of_Module_Addition__c , 
+"New Maintenance Agreement, No Agreement in place previously", " E-Maintenance Contract",
+"New Device Type Being Connected Through Aegis POC", "D- New Device Connected To Aegis",
+"ADS Order --- additional meter connectivity", "A- ADS Order",
+"New Installation (No System Installed Currently)", "C- New Install, Module Addition, or Facility Add",
+"Module Addition to Existing RALS System", "C- New Install, Module Addition, or Facility Add",
+"Facility Being added to existing Module", "C- New Install, Module Addition, or Facility Add",
+"Migration to RALS Plus/RALS Web3", "C- New Install, Module Addition, or Facility Add",
+"Renewal With Device/Platform Change", "B- Renewal With Device/Platform Change",
+"Renewal With Device/Platform Change", "B- Renewal With Device/Platform Change",
+"Not New Business --- Renewal or Expansion")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>New Business Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

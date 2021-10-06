@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Has_Test_System__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>field to document if a customer has a test system or not. Will contribute to total project complexity score</description>
+    <externalId>false</externalId>
+    <label>* Customer Has Test System</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

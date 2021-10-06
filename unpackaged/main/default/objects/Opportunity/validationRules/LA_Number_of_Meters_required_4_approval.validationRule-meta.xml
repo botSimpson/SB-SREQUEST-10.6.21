@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LA_Number_of_Meters_required_4_approval</fullName>
+    <active>true</active>
+    <description>Will require the "Number of Meters" to have a value in it to be sent for license approval</description>
+    <errorConditionFormula>(AND
+(ISPICKVAL(StageName, "Ready For Closeout Approval"),
+RecordTypeId &lt;&gt;"0120b000000VQRx",  
+( ISBLANK( Number_of_Meters__c ) )))</errorConditionFormula>
+    <errorMessage>The Number of Meters field must be populated, Insert 0 if the field doesn't apply to this transaction</errorMessage>
+</ValidationRule>

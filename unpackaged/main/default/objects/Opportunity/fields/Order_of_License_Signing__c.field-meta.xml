@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_of_License_Signing__c</fullName>
+    <externalId>false</externalId>
+    <label>Order of License Signing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Signed First, AI to countersign and return</fullName>
+                <default>false</default>
+                <label>Customer Signed First, AI to countersign and return</label>
+            </value>
+            <value>
+                <fullName>AI signed First, Customer to Countersign and send to AI</fullName>
+                <default>false</default>
+                <label>AI signed First, Customer to Countersign and send to AI</label>
+            </value>
+            <value>
+                <fullName>Government Solicitation Not a Signed License</fullName>
+                <default>false</default>
+                <label>Government Solicitation Not a Signed License</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

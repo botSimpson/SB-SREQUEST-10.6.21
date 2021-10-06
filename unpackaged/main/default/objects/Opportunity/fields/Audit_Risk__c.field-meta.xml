@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Risk__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field that will document any opportunities that didn't follow usual process opening us up for issues in  an audit etc...</description>
+    <externalId>false</externalId>
+    <label>Audit Risk</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

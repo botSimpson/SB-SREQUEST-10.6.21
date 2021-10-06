@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Will_require_Lifecycle_Management_Proj__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>field to document if a project will require a lifecycle management component (server swap/virtualization etc..) as part of the project. Will be used to calculate a project score</description>
+    <externalId>false</externalId>
+    <label>* Will require Lifecycle Management Proj</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

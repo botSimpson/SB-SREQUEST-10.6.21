@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Lost_Details_Required</fullName>
+    <active>true</active>
+    <description>Rule that will conditionally require Closed Lost Details whenever a opportunity is documented as being closed lost due to Competition or Other</description>
+    <errorConditionFormula>AND( 
+RecordTypeId="0120b000000VQRx", 
+ISPICKVAL(StageName,"Closed Lost"), 
+OR(AND(ISBLANK(Closed_Lost_Details__c),ISPICKVAL( Closed_Lost_Reason__c , "")), 
+AND(ISBLANK(Closed_Lost_Details__c), 
+OR(ISPICKVAL( Closed_Lost_Reason__c , "Competition"), 
+ISPICKVAL( Closed_Lost_Reason__c , "Price / Budget Constraints"), 
+ISPICKVAL( Closed_Lost_Reason__c , "Timing"), 
+ISPICKVAL( Closed_Lost_Reason__c , "Other"), 
+ISPICKVAL( Closed_Lost_Reason__c , "Product Limitation"))), 
+AND(NOT(ISBLANK(Closed_Lost_Details__c)), 
+ISPICKVAL( Closed_Lost_Reason__c , "")) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>Closed_Lost_Details__c</errorDisplayField>
+    <errorMessage>Please provide more details on why we lost the business.   What was the scenario, who was the competition etc...</errorMessage>
+</ValidationRule>

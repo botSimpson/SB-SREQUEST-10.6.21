@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Install__c</fullName>
+    <externalId>false</externalId>
+    <label>Post Install Transaction Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Interface - Interface Testing or Modification</fullName>
+                <default>false</default>
+                <label>Interface - Interface Testing or Modification</label>
+            </value>
+            <value>
+                <fullName>Interface - New Test/Cartridge/Profile</fullName>
+                <default>false</default>
+                <label>Interface - New Test/Cartridge/Profile</label>
+            </value>
+            <value>
+                <fullName>Interface - Upgrade</fullName>
+                <default>false</default>
+                <label>Interface - Upgrade</label>
+            </value>
+            <value>
+                <fullName>Interface- New ADT Interface</fullName>
+                <default>false</default>
+                <label>Interface- New ADT Interface</label>
+            </value>
+            <value>
+                <fullName>Interface- New LIS Interface</fullName>
+                <default>false</default>
+                <label>Interface- New LIS Interface</label>
+            </value>
+            <value>
+                <fullName>Training - Additional Training</fullName>
+                <default>false</default>
+                <label>Training - Additional Training</label>
+            </value>
+            <value>
+                <fullName>After Hours Support</fullName>
+                <default>false</default>
+                <label>After Hours Support</label>
+            </value>
+            <value>
+                <fullName>Hourly Service Charge</fullName>
+                <default>false</default>
+                <label>Hourly Service Charge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_C_Required_at_Closure</fullName>
+    <active>true</active>
+    <description>validaiton rule that will require that a primary contact is documented before an opportunity can go through the closure approvals....</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(StageName, 	"Ready For Closeout Approval") ,
+  ISBLANK( Primary_Customer_Contact__c ))</errorConditionFormula>
+    <errorMessage>A primary contact must be documented before a opportunity can be sent for closure.   
+
+Please create/edit a contact&amp;role record and make sure the "Primary Contact For:" field is populated</errorMessage>
+</ValidationRule>

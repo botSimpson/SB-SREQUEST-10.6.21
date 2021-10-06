@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regional_Account_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup field ot establish relationship between a opportunity and the Regional Account Manager in that territory.   Will be used in sending automated communication to the RAM for opportunities that they may or may not be actively working</description>
+    <externalId>false</externalId>
+    <label>Regional Account Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities_In_RAM_Territory</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

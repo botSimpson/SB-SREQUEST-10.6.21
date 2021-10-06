@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avg_Days_Of_Implementation__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Product_Formula__c , 
+"Abbott i-STAT POC", 107,
+"Alere Cardiac Marker ", 75,
+"Alere Hemostasis/Hematology/Immunoassay ", 160,
+"eQuiz ", 15,
+"HemoCue Hemoglobin ", 55,
+"ITC Blood Oximeter ", 141,
+"ITC Hemochron® Coagulation devices", 177,
+"Medtronic Coagulation HMS PLUS ", 232,
+"NOVA Glucose ", 155,
+"Radiometer ABL80 device ", 29,
+"Roche Coagulation ", 179,
+"Roche Glucose ", 125,
+"Siemens HbA1c ", 152,
+"Siemens Urinalysis Status Connect ", 148,
+NULL)</formula>
+    <label>Avg Days Of Implementation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

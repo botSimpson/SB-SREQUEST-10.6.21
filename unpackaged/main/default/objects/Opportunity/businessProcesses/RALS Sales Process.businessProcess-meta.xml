@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RALS Sales Process</fullName>
+    <description>AI Sales Process of RALS Plus and RALS Freedom licenses and components</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Accepted Price Quote</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won - Pending Cancellation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contract Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Future Opportunity</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Internal Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Onsite Presentation%2FDemo</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Positve Interest</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Proposal%2FPrice Quote</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Ready For Closeout Approval</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Termination of Service Letter Sent</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

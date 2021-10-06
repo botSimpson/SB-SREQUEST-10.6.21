@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Closed_Won_status_change</fullName>
+    <active>true</active>
+    <description>prevents outside sales reps from changing the opportunity status to "Closed Won". Based on profile Sales Territory Rep User</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(StageName), 
+RecordTypeId &lt;&gt;"0120b000000VQRx", 
+OR(TEXT(StageName) = "Closed Won", 
+TEXT(StageName) = "Ready for Signed Contract Approval", 
+TEXT(StageName) = "Internal Contract Approval"), 
+$Profile.Id = "00e400000013OhE" 
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>You do not have sufficient privileges to change this opportunity to Closed Won</errorMessage>
+</ValidationRule>

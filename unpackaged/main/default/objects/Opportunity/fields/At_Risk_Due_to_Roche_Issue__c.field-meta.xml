@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>At_Risk_Due_to_Roche_Issue__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field that will capture which opportunities are at Risk due to Roche Inform II problem.  Reporting on such field will quantify what revenue (not just Roche Glucose licenses) are at risk</description>
+    <externalId>false</externalId>
+    <label>At Risk Due to Roche I2 Issue</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

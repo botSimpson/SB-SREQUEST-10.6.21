@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_and_static_date_cannot_be_populated</fullName>
+    <active>true</active>
+    <description>Error occurs when static date and term are populated</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(Static_Go_Live_Date__c)),
+
+NOT(ISBLANK(Contingent_Term__c)))</errorConditionFormula>
+    <errorMessage>Static Go-Live &amp; Contingent Term both cannot be populated. Please enter one value</errorMessage>
+</ValidationRule>

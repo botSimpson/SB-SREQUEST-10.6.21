@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Opportunities_Closing_This_QT</fullName>
+    <booleanFilter>(1 OR 2) AND 3 AND (4 OR 5 OR 6)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Alere_System_lookup__c</columns>
+    <columns>Product_Formula__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Contract_Expiration__c</columns>
+    <columns>Quote_Number__c</columns>
+    <columns>Informatics_Territory__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Status_Of_Approval_Request__c</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Short_Description__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Regional_Account_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner_Is_User__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RAM_is_user__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Closed Won,Closed Lost,Order Cancelled</value>
+    </filters>
+    <filters>
+        <field>Contract_Expiration__c</field>
+        <operation>equals</operation>
+        <value>THIS_QUARTER</value>
+    </filters>
+    <filters>
+        <field>Contract_Expiration__c</field>
+        <operation>lessThan</operation>
+        <value>THIS_QUARTER</value>
+    </filters>
+    <filters>
+        <field>Contract_Expiration__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>My Open Opportunities</label>
+    <sharedTo>
+        <group>RAM_Ggroup_Inside_Sales</group>
+        <role>ISA_Manager</role>
+    </sharedTo>
+</ListView>

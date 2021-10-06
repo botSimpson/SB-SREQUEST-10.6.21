@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Admins_Cant_NonZero_Opp_In_One_Step</fullName>
+    <active>true</active>
+    <description>validation rule that prevents admins from closing a opportunity that has &gt; $0 Amount without approval loop or marking override workflow rules as true</description>
+    <errorConditionFormula>AND( 
+Override_Workflow_Rules__c =FALSE, 
+Amount &gt; 0, 
+$Profile.Id="00e30000000gqSj", 
+ISPICKVAL( StageName , "Closed Won"), 
+IsClosed &lt;&gt; TRUE,
+NOT( ISPICKVAL(Status_Of_Approval_Request__c, "Approved") ))</errorConditionFormula>
+    <errorMessage>This Opportunity cannot be closed:
+
+-- Hit Submit For Approval to have approved 
+
+OR
+
+-- Check the Override Workflow Rules Checkbox if this doesn't need approval (historical record, correction etc...)</errorMessage>
+</ValidationRule>

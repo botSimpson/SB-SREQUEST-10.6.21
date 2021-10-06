@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waiting_on_Approver__c</fullName>
+    <description>Formula to return to show the approvers needed to keep opporutnities moving towards closure.</description>
+    <externalId>false</externalId>
+    <formula>CASE(
+ Status_Of_Approval_Request__c , 
+"Approval Submitted", "Boni/Beth", 
+"Approved By Sales", "Susan",
+"Approved By Legal, Need Finance and Sales VP Approval", "Abe/Maha",
+"Approved By Operations", "Abe/Maha",
+"Approved - Contract Record Update Pending", "Susan",
+"")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Waiting on Approver</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

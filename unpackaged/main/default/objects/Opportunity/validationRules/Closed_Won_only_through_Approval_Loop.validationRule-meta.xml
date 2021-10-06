@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Won_only_through_Approval_Loop</fullName>
+    <active>true</active>
+    <description>Rule that will require that a opportunity is sent through a approval loop before it can be closed....</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(StageName, "Closed Won"), 
+NOT( ISPICKVAL(Status_Of_Approval_Request__c, "Approved") ),AND( 
+$Profile.Id &lt;&gt; "00e30000000gqSj", $Profile.Id &lt;&gt; "00e0b000001Gcne", $User.Id&lt;&gt;"0050b000005rAWa"))</errorConditionFormula>
+    <errorMessage>Opportunities can now only be "Closed Won" by going through a approval loop. 
+
+ Hit the  "Submit For Approval" Button</errorMessage>
+</ValidationRule>

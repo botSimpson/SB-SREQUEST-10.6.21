@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Priority_For_Immediate_Assignment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field that ISAs can use to notate that a opportunity needs immediate project review and creation.  This will give improved visability as well as mark the associated project as high priority through workflow</description>
+    <externalId>false</externalId>
+    <label>High Priority- For Immediate Assignment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchasing_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Purchasing Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yet to receive MAS and/or signed License</fullName>
+                <default>false</default>
+                <label>Yet to receive MAS and/or signed License</label>
+            </value>
+            <value>
+                <fullName>Received PO, waiting on license</fullName>
+                <default>false</default>
+                <label>Received PO, waiting on license</label>
+            </value>
+            <value>
+                <fullName>Received license waiting on PO</fullName>
+                <default>false</default>
+                <label>Received license waiting on PO</label>
+            </value>
+            <value>
+                <fullName>Received both PO and Signed License</fullName>
+                <default>false</default>
+                <label>Received both PO and Signed License</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

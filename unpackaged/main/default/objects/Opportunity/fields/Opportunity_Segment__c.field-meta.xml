@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Segment__c</fullName>
+    <description>Field that will provide business segment for all RALS Opportunities.  Will delineate by New or Renewal business and whether it is in the blood-glucose or non-blood-glucose market</description>
+    <externalId>false</externalId>
+    <label>Opportunity Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Business - Glucose</fullName>
+                <default>false</default>
+                <label>New Business - Glucose</label>
+            </value>
+            <value>
+                <fullName>New Business - Non-Glucose</fullName>
+                <default>false</default>
+                <label>New Business - Non-Glucose</label>
+            </value>
+            <value>
+                <fullName>Renewal Business - Glucose</fullName>
+                <default>false</default>
+                <label>Renewal Business - Glucose</label>
+            </value>
+            <value>
+                <fullName>Renewal Business - Non-Glucose</fullName>
+                <default>false</default>
+                <label>Renewal Business - Non-Glucose</label>
+            </value>
+            <value>
+                <fullName>Addition to Existing Contract</fullName>
+                <default>false</default>
+                <label>Addition to Existing Contract</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

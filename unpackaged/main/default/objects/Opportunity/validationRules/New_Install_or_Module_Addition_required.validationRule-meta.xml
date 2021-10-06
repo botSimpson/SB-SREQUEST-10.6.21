@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Install_or_Module_Addition_required</fullName>
+    <active>true</active>
+    <description>Rule that will conditionally require "New Install or New Module Addition" field when the opportunity is new business</description>
+    <errorConditionFormula>AND(ISPICKVAL(New_Contract_or_Renewal__c,  "New Business"),
+RecordTypeId &lt;&gt;"0120b000000VQRx", 
+ISPICKVAL( New_Installation_of_Module_Addition__c  ,"") )</errorConditionFormula>
+    <errorDisplayField>New_Installation_of_Module_Addition__c</errorDisplayField>
+    <errorMessage>This field is now required for a "New Business" Opportunities</errorMessage>
+</ValidationRule>

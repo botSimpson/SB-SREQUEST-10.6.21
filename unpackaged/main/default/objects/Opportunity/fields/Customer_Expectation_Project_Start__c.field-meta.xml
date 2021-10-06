@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Expectation_Project_Start__c</fullName>
+    <description>Field to capture the customers expectation of when the project should begin.  Will be used internally to manage expectations and assign projects</description>
+    <externalId>false</externalId>
+    <label>Customer Expectation - Project Start</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

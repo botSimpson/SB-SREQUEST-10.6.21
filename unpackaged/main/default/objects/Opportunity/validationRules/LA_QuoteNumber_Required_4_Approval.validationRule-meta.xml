@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LA_QuoteNumber_Required_4_Approval</fullName>
+    <active>true</active>
+    <description>Will require the PO Field to have a value in it to be sent for license approval</description>
+    <errorConditionFormula>(AND(ISPICKVAL(StageName, "Ready For Closeout Approval"), 
+( ISBLANK( Quote_Number__c ) )))</errorConditionFormula>
+    <errorMessage>The Proposal/Quote # field must be populated, Insert "No Charge POF" if there is no Quote #</errorMessage>
+</ValidationRule>

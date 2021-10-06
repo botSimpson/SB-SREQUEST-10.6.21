@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Arrangement__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Had to convert this to a multi-select picklist, so the validation rule would work.</inlineHelpText>
+    <label>Payment Arrangement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Pay</fullName>
+                <default>false</default>
+                <label>Customer Pay</label>
+            </value>
+            <value>
+                <fullName>Customer Pay-annual invoice/multi-year</fullName>
+                <default>false</default>
+                <label>Customer Pay-annual invoice/multi-year</label>
+            </value>
+            <value>
+                <fullName>Device Vendor Pay</fullName>
+                <default>false</default>
+                <label>Device Vendor Pay</label>
+            </value>
+            <value>
+                <fullName>Vendor Pay-annual invoice/multi-year</fullName>
+                <default>false</default>
+                <label>Vendor Pay-annual invoice/multi-year</label>
+            </value>
+            <value>
+                <fullName>Roche Pay</fullName>
+                <default>false</default>
+                <label>Roche Pay</label>
+            </value>
+            <value>
+                <fullName>Combination Pay</fullName>
+                <default>false</default>
+                <label>Combination Pay</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>CPT Monthly</fullName>
+                <default>false</default>
+                <label>CPT Monthly</label>
+            </value>
+            <value>
+                <fullName>CPT Quarterly</fullName>
+                <default>false</default>
+                <label>CPT Quarterly</label>
+            </value>
+            <value>
+                <fullName>Distributor Pay</fullName>
+                <default>false</default>
+                <label>Distributor Pay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

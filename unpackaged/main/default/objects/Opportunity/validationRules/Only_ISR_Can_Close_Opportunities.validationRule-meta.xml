@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_ISR_Can_Close_Opportunities</fullName>
+    <active>true</active>
+    <description>Validation rule that will guarantee that only System administrators or Regional Account Managers can push opportunities into closout approval processes.....</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(StageName,"Ready For Closeout Approval"),
+RecordTypeId &lt;&gt;"0120b000000VQRx", 
+NOT(OR( $Profile.Id = "00e30000000gqSj", 
+$Profile.Id = "00e400000013OhJ",
+$Profile.Id = "00e0b000001S9mY")))</errorConditionFormula>
+    <errorMessage>At This time only Regional Account Managers can push a opportunity for Closeout Approvals</errorMessage>
+</ValidationRule>

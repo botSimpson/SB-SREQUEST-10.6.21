@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Contract_or_Renewal__c</fullName>
+    <description>Field to segment revenue stream by New Business verses Renewals</description>
+    <externalId>false</externalId>
+    <label>New Business or Renewal?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Business</fullName>
+                <default>false</default>
+                <label>New Business</label>
+            </value>
+            <value>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+                <label>Renewal</label>
+            </value>
+            <value>
+                <fullName>Renewal With Device Change</fullName>
+                <default>false</default>
+                <label>Renewal With Device Change</label>
+            </value>
+            <value>
+                <fullName>Renewal With Platform Change(ie..Plus &gt; Freedom)</fullName>
+                <default>false</default>
+                <label>Renewal With Platform Change(ie..Plus &gt; Freedom)</label>
+            </value>
+            <value>
+                <fullName>Expansion of Existing Module License</fullName>
+                <default>false</default>
+                <label>Expansion of Existing Module License</label>
+            </value>
+            <value>
+                <fullName>Auto-Renewal</fullName>
+                <default>false</default>
+                <label>Auto-Renewal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

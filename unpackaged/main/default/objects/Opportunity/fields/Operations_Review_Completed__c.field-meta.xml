@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operations_Review_Completed__c</fullName>
+    <description>Checkbox that will document the date/Time that operations finished review of opportunity record, thus deeming it ready for project creation</description>
+    <externalId>false</externalId>
+    <label>Operations Review Completed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_is_required_for_Renewal_Opps</fullName>
+    <active>true</active>
+    <description>Rule that requires System for renewal opportunties</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL( New_Contract_or_Renewal__c , "Renewal"),
+ISPICKVAL( New_Contract_or_Renewal__c , "Auto-Renewal")), ISBLANK( Alere_System_lookup__c )
+)</errorConditionFormula>
+    <errorDisplayField>Alere_System_lookup__c</errorDisplayField>
+    <errorMessage>System Is a Required Field</errorMessage>
+</ValidationRule>

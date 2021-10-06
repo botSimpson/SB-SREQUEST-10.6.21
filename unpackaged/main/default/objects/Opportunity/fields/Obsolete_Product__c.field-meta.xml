@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Obsolete_Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Obsolete_Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>New_Contract_or_Renewal__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RALS Plus</fullName>
+                <default>true</default>
+                <label>RALS Plus</label>
+            </value>
+            <value>
+                <fullName>RALS Freedom</fullName>
+                <default>false</default>
+                <label>RALS Freedom</label>
+            </value>
+            <value>
+                <fullName>ICU Tracker</fullName>
+                <default>false</default>
+                <label>ICU Tracker</label>
+            </value>
+            <value>
+                <fullName>Gluco Stabilizer</fullName>
+                <default>false</default>
+                <label>Gluco Stabilizer</label>
+            </value>
+            <value>
+                <fullName>GlucoTracker</fullName>
+                <default>false</default>
+                <label>GlucoTracker</label>
+            </value>
+            <value>
+                <fullName>RALS Lite</fullName>
+                <default>false</default>
+                <label>RALS Lite</label>
+            </value>
+            <value>
+                <fullName>TGCM</fullName>
+                <default>false</default>
+                <label>TGCM</label>
+            </value>
+            <value>
+                <fullName>TGC-NBI</fullName>
+                <default>false</default>
+                <label>TGC-NBI</label>
+            </value>
+            <value>
+                <fullName>AegisPOC</fullName>
+                <default>false</default>
+                <label>AegisPOC</label>
+            </value>
+            <value>
+                <fullName>PRISMPOC</fullName>
+                <default>false</default>
+                <label>PRISMPOC</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>RALS Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <controllingFieldValue>Renewal With Platform Change(ie..Plus &gt; Freedom)</controllingFieldValue>
+            <valueName>RALS Freedom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <valueName>ICU Tracker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <valueName>Gluco Stabilizer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <valueName>GlucoTracker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <valueName>RALS Lite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <valueName>TGCM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <valueName>TGC-NBI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <controllingFieldValue>Renewal With Device Change</controllingFieldValue>
+            <valueName>AegisPOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Renewal</controllingFieldValue>
+            <controllingFieldValue>Expansion of Existing Module License</controllingFieldValue>
+            <valueName>PRISMPOC</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

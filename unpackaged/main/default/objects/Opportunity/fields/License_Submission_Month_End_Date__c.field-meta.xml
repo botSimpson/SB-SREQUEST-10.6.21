@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_Submission_Month_End_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+MONTH( Date_of_License_Approval_Submission__c ) = 12, 
+DATE( YEAR( Date_of_License_Approval_Submission__c ), 12, 31 ), 
+DATE( YEAR( Date_of_License_Approval_Submission__c ), MONTH ( Date_of_License_Approval_Submission__c ) + 1, 1 ) - 1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>License Submission Month End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

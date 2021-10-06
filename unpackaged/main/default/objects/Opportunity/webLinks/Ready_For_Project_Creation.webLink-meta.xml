@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_For_Project_Creation</fullName>
+    <availability>online</availability>
+    <description>Custom button that will populate "Ready for Project Creation" checkbox which will begin some workflow actions......</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Ready For Project Creation</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT("/soap/ajax/29.0/connection.js")} 
+var opportunityObj = new sforce.SObject("Opportunity"); 
+opportunityObj.Id = '{!Opportunity.Id}'; 
+opportunityObj.Ready_For_Project_Creation__c='True'; 
+var result = sforce.connection.update([opportunityObj]); 
+if (result[0].success=='false') { 
+alert(result[0].errors.message); 
+} else { 
+location.reload(true); 
+}</url>
+</WebLink>

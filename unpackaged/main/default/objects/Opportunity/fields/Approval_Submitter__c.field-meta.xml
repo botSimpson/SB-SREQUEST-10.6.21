@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Submitter__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field to capture the user who sent a opportunity record into approval.   In the case of Quote and License approval, the approval submitter is the sales persion who requested the license (since the contract person who performs the actions is the submitter)</description>
+    <externalId>false</externalId>
+    <label>Approval Submitter</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Approvals_Submitted</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

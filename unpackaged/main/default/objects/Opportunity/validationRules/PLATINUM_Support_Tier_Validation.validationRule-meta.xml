@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PLATINUM_Support_Tier_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>/* Current Limits 8.13.20
+One Day of Onsite Training = 1
+1:1 Remote Training Session = 2
+After Hours Support = 1
+Learning Management System (RALS eQuiz or HealthStream)	= TRUE 
+One Day of Onsite Training = 1
+Onsite Lean Informatics Workflow Assessment = 1
+Test System Included = TRUE
+Module Transition Included = 1
+
+Additional Download Sites (ADS Orders) = 10 + 20% platinum
+
+*/
+
+
+
+AND( 
+
+TEXT(Support_Tier_Type__c) = 'Platinum',
+
+ISCHANGED(Service_Redeemed__c), 
+
+OR(
+
+
+AND(TEXT(Service_Redeemed__c) = 'Additional Download Sites (ADS Orders)',
+Support_Tier_Contract__r.Platinum_ADS_Orders_Used__c = TRUE),
+
+AND(TEXT(Service_Redeemed__c) = 'Onsite Training',
+Support_Tier_Contract__r.Onsite_Training__c = 1),
+
+AND(TEXT(Service_Redeemed__c) = 'Onsite Installation of a New System',
+Support_Tier_Contract__r.Onsite_Installation_New_Service__c = 1),
+
+AND(TEXT(Service_Redeemed__c) = '1:1 Remote Training Session',
+Support_Tier_Contract__r.Remote_Training_Session__c = 1),
+
+AND(TEXT(Service_Redeemed__c) = 'After Hours Support',
+Support_Tier_Contract__r.After_Hours_Support__c = 1),
+
+AND(TEXT(Service_Redeemed__c) = 'Learning Management System (RALS eQuiz or HealthStream)',
+Support_Tier_Contract__r.Learning_Management_System__c = TRUE),
+
+AND(TEXT(Service_Redeemed__c) = 'Onsite Lean Informatics Workflow Assessment',
+ Contract.Onsite_Lean_Workflow_Assessment__c = 1),
+
+
+AND(TEXT(Service_Redeemed__c) = 'Test System Included',
+Support_Tier_Contract__r.Test_System_Included__c = TRUE),
+
+AND(TEXT(Service_Redeemed__c) = 'Module Transition',
+Support_Tier_Contract__r.Module_Transition__c = 1)))</errorConditionFormula>
+    <errorMessage>Service Item Exceeded</errorMessage>
+</ValidationRule>

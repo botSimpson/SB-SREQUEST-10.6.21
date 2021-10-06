@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OUS_Partial_Paperwork_Needs_Project_Date</fullName>
+    <active>false</active>
+    <description>2nd Version to Activate Later - Requires Opportunities of the OUS Record Type that are set to the Partial Paperwork Stage to also have the Expected Project Completion Date filled out.  Also Expected Project Completion Date cannot be in the past.</description>
+    <errorConditionFormula>AND(RecordTypeId="0120b000000VQRx",OR(ISPICKVAL(StageName,"Partial Paperwork"),ISPICKVAL(StageName,"Ready For Closeout Approval")),OR( ISBLANK( Expected_Project_Completion_Date_del__c), Expected_Project_Completion_Date_del__c - TODAY() &lt; 0))</errorConditionFormula>
+    <errorMessage>Expected Project Completion Date Cannot Be Blank Or In The Past</errorMessage>
+</ValidationRule>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backlog_Project_Pathway__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Backlog_Project_Step__c, 
+"1", "No Pathway Yet - In Qualification", 
+"C2", "Cancellation",
+"C3", "Cancellation",
+"C4", "Cancellation",
+"C4R", "No Pathway Yet - In Qualification",
+"C5", "Cancellation",
+"C5R", "No Pathway Yet - In Qualification",
+"C6", "Cancellation",
+"C6R", "No Pathway Yet - In Qualification",
+"C7", "Cancellation",
+"C8", "Cancellation",
+"END", "Returned to Operations",
+
+"Moving Forward With Order")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Backlog Project Pathway</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Definition_of_Approval__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Backlog_Project_Step__c , 
+"C2", "Sales Management has no problem with this order being cancelled", 
+"C3", "Operations has no problem with this order being cancelled", 
+"C4", "Legal has no problem with this order being cancelled", 
+"C5", "The order cancellation notice has been sent to the customer", 
+"C6", "30 days have passed since the order cancellation notice was sent and there has been no objection to the cancellation. The order is cancelled, we can now update our records.",
+ "C7", "The data repository that I monitor has been updated to reflect this order being cancelled ",
+ "F2", "The origininal PO that was issued can still be used.", 
+"F3", "The customer is committed to the start date listed above and have allocated resources to work with us on the project",
+ "F4", "The implementation checklists have been completed, we have a firm understanding of the project scope",
+ "F5", "The project has been built in At-Task, and is now ready to be assigned",
+ "F5R", "The issues raised by the project build team have been resolved", 
+"F6", "The Project has been assigned and is now active", 
+"N/A - the project is not in an approval stage")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Definition of Approval</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

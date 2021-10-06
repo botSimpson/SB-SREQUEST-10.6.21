@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Contingent_Pricing</fullName>
+    <active>true</active>
+    <description>Require contingent pricing on all new business</description>
+    <errorConditionFormula>AND(
+
+ISPICKVAL(Contingency__c, 'Yes'),
+ISNULL(Static_Go_Live_Date__c),
+ISNULL(Contingent_Term__c))</errorConditionFormula>
+    <errorMessage>Contingent Term or Static Go-Live Date required for all New Business</errorMessage>
+</ValidationRule>

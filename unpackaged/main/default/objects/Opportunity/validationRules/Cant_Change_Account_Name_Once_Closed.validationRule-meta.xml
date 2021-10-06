@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Change_Account_Name_Once_Closed</fullName>
+    <active>true</active>
+    <description>Validation rule that will prevent non-system admins from changing account names once the opporutnity has closed</description>
+    <errorConditionFormula>AND(
+IsClosed = TRUE, 
+ISCHANGED( Account_Number__c), 
+$Profile.Name &lt;&gt; "System Administrator")</errorConditionFormula>
+    <errorMessage>Finance has requested that Account Names cannot be changed once a record is closed, since is causes confusion and in some cases can trigger duplicate automated messages.  
+
+Contact a System Admin, if you need the account name changed.</errorMessage>
+</ValidationRule>

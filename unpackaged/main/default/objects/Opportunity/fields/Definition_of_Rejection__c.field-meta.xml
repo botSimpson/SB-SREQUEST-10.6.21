@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Definition_of_Rejection__c</fullName>
+    <description>Field used to document what is meant by rejecting approval steps as part of the backlog project</description>
+    <externalId>false</externalId>
+    <formula>CASE(Backlog_Project_Step__c , 
+"C2", "Sales Management has an issue with this cancellation. The issue has been documented in the notes below. The sales rep will be sent notification.",
+ "C3", "Operations Management has an issue with this cancellation. The issue has been documented in the notes below. Sales Management will be sent notification.",
+ "C4", "Legal has an issue with this cancellation. The issue has been documented in the notes below. The sales rep will be sent notification",
+ "C5", "There is an issue with sending the cancellation notice. The issue has been documented in the notes below. Legal will be sent notification.",
+ "C6", "Since the Cancellation Notice was sent, we have learned on reasons why we should not proceed with the cancellation. The request to cancell the order will be rejected.",
+ "C7", "There is an issue with documenting this cancellation. The issue has been documented int he notes below. PLEASE LET THE SALESFORCE ADMINISTRATOR KNOW OF THE ISSUE, SO THE RIGHT ACTION CAN BE TAKEN TO GET THIS REQUEST TAKEN CARE OF.",
+ "F2", "We will need a new Purchase Order before we can proceed with fulfilling the order.",
+ "F3", "Sales will need to work some more with the customer regarding setting a realistic timeline and having resources allocated",
+ "F4", "The implementation checklists are not filled out completely and/or we don't yet have a clear understanding of the project scope",
+ "F5", "There are questions/issues that prveent us from completing the build of the project in At-Task",
+ "F5R", "The implementation checklists are not filled out completely and/or we don't yet have a clear understanding of the project scope",
+ "F6", "Issues have come up when assigning this project, the project needs to be sent back to sales",
+ "N/A - the project is not in an approval stage")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Definition of Rejection</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

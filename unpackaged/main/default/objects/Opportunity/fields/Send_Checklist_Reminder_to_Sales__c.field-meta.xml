@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Checklist_Reminder_to_Sales__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checklist that will be used in a process to automatically notify sales team that a implementation checklist needs to be completed and attached to the opportunity record.   A True value in this field will trigger workflow rules that send a automatic email.</description>
+    <externalId>false</externalId>
+    <label>Send Checklist Reminder to Sales</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

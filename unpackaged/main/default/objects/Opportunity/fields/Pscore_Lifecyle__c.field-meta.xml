@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pscore_Lifecyle__c</fullName>
+    <description>formula that will derive a value based on whether or not a lifecycle activity will be required as part of this project</description>
+    <externalId>false</externalId>
+    <formula>IF( Will_require_Lifecycle_Management_Proj__c = True, 1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>* Pscore Lifecyle</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

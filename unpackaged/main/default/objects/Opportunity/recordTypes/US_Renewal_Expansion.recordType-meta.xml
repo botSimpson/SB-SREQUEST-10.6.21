@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_Renewal_Expansion</fullName>
+    <active>true</active>
+    <businessProcess>US Renewal</businessProcess>
+    <label>US Renewal and Expansion</label>
+    <picklistValues>
+        <picklist>Backlog_Order_Wave__c</picklist>
+        <values>
+            <fullName>1%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backlog_Project_Status__c</picklist>
+        <values>
+            <fullName>Implementation Scheduled to Move Forward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marked For Cancellation - Return to Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Moving Forward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification of Backlog Order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backlog_Project_Step__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>C1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C1R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C3R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C4R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C5%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C5R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C6R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F3R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F4R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F5R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F6R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returned to Operations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cancellation_Scenario__c</picklist>
+        <values>
+            <fullName>Cancelled By Sales After Project Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled By Sales%2C No Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Cancelled%2C Project Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Cancelled%2C Backlog%2FZombie Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Cancelled%2C Sales Not Decided Yet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Closed_Lost_Reason__c</picklist>
+        <values>
+            <fullName>Allocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price %2F Budget Constraints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Limitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RALS Web3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitor__c</picklist>
+        <values>
+            <fullName>Cobas IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Manager Software that comes with device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Include in Notes%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pweb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telcor QML%2C Quick Link%2C or Data Link</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contingency__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivery_Method__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Informatics_Territory__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EME North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EME South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LATAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid-Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RALS LiNK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sympheos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK and IRL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IntegrationNeeds__c</picklist>
+        <values>
+            <fullName>Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ERP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_Exhibit_A_required_this_year__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>AACC 2008</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AADE 2008</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACGME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alabama POC Webinar 021617</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arizona POC Webinar 022117</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bethesda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Mail Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC%2Enet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOA POC Webinar 030717</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthways</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAS%2FMDN  Sales Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ohio POC Webinar 030917</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Tech Fair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego POC Webinar 011917</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Texas AADE List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show - SCCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Seminar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar Recording Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MainCompetitor__c</picklist>
+        <values>
+            <fullName>Aegis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telcor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Migration_Consolidtion_Platform_Change__c</picklist>
+        <values>
+            <fullName>Involves Platform Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Involves Server Migration or Consolidation %28But no Platform Change%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Need_EMR_Integration__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Contract_or_Renewal__c</picklist>
+        <values>
+            <fullName>Auto-Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expansion of Existing Module License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal With Device Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal With Platform Change%28ie%2E%2EPlus %3E Freedom%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Installation_of_Module_Addition__c</picklist>
+        <values>
+            <fullName>ADS Order --- additional meter connectivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADS Validation Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aegis Support and Maintenance License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cartridges%2C Interfaces being added to existing Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost Per Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facility Being added to existing Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LDAP Implementation Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migration to RALS Plus%2FRALS Web3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Addition to Existing RALS System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Device Type Being Connected Through Aegis POC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Installation %28No System Installed Currently%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Maintenance Agreement%2C No Agreement in place previously</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not New Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal With Device%2FPlatform Change</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Obsolete_Product__c</picklist>
+        <values>
+            <fullName>AegisPOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gluco Stabilizer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GlucoTracker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICU Tracker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRISMPOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RALS Freedom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RALS Lite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RALS Plus</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>TGC-NBI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TGCM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Campaign__c</picklist>
+        <values>
+            <fullName>E-learning campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual test Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upsell campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendors campaign</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Segment__c</picklist>
+        <values>
+            <fullName>Addition to Existing Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business - Glucose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business - Non-Glucose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal Business - Glucose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal Business - Non-Glucose</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_of_License_Signing__c</picklist>
+        <values>
+            <fullName>AI signed First%2C Customer to Countersign and send to AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Signed First%2C AI to countersign and return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government Solicitation Not a Signed License</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Arrangement__c</picklist>
+        <values>
+            <fullName>CPT Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPT Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combination Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Pay-annual invoice%2Fmulti-year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device Vendor Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roche Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor Pay-annual invoice%2Fmulti-year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Post_Install__c</picklist>
+        <values>
+            <fullName>After Hours Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hourly Service Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface - Interface Testing or Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface - New Test%2FCartridge%2FProfile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface - Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface- New ADT Interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface- New LIS Interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training - Additional Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Status__c</picklist>
+        <values>
+            <fullName>ADS Quote %26 Directions sent to customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Contacted Re%3A Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Complete%2C Interface Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Complete%2C Needs Interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface Engineer Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License%2FExhibit A Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License%2FExhibit Sent Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Activity</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Order sent to Service Dept%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO %26 worksheet received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Received%2C need License Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO received%2C need worksheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POF processed to Operations%28Closed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phase I ISW completed by account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phase II ISW completed by Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Options Sent to Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing sent to RBM or Vendor rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Manager Assigned - ISWs Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase Order Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed License Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed exhibit A%2C Need PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verbal Close</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>worksheet completed%2C need PO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Purchasing_Status__c</picklist>
+        <values>
+            <fullName>Received PO%2C waiting on license</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received both PO and Signed License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received license waiting on PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet to receive MAS and%2For signed License</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SalesEngineer__c</picklist>
+        <values>
+            <fullName>SE 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Cycle_Milestones__c</picklist>
+        <values>
+            <fullName>Account Quoted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Lost - No Purchase Being Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Generated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed License and PO %28Closed%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Redeemed__c</picklist>
+        <values>
+            <fullName>1%3A1 Remote Training Session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional Download Sites %28ADS Orders%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>After Hours Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning Management System %28RALS eQuiz or HealthStream%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Transition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onsite Installation of a New System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onsite Lean Informatics Workflow Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onsite Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Specific_requirements__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver to be built</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature to be built</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_Of_Approval_Request__c</picklist>
+        <values>
+            <fullName>2nd Approval Rejected - returned Sales%2FLegal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approrval Submitted - Quote%2FLicense Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Process Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Rejected - Back to Sales%2FLegal to fix and re-submit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Rejected - Order Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Submitted - Opportunity Closeout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Submitted - Order Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved - Contract Record Update Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved - Contract Record Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved - Waiting on Record Update By Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved By Boni%2C Needs Approval From Beth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved By Legal%2C Need Finance and Sales VP Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved By Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved By Sales Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved%2C By Finance and VP Sales and Ops%2C Need Legal Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Approved%2C waiting for all records to be updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In middle of correction and review step</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial Finance Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placed On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resubmitted for RAM Manager Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returned to Regional Account Manager for Clarification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_of__c</picklist>
+        <values>
+            <fullName>Initiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs_Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prepared_For_Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready To Be Sent To Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support_Tier_Type__c</picklist>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Add-On Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_for_License_Approval_Notes__c</fullName>
+    <description>Field that will provide Instruction for checking that record is accurate before submitting</description>
+    <externalId>false</externalId>
+    <formula>$User.FirstName&amp;" "&amp;$User.LastName&amp;", please review all Opportunity data prior to submitting a request for a license. If you wish to proceed, please hit Save. If not, please press Cancel."</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ready for License Approval?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

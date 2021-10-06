@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_High_Level__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( StageName , 
+"Initial Interest", "A - Early Stages of Sales Cycle",
+"Inquiry/Webinar", "A - Early Stages of Sales Cycle",
+"Positve Interest", "A - Early Stages of Sales Cycle",
+"Onsite Presentation/Demo", "A - Early Stages of Sales Cycle",
+"Proposal/Price Quote", "A - Early Stages of Sales Cycle",
+"Proposal/Price Quote", "A - Early Stages of Sales Cycle",
+"Proposal Review", "B - Middle Stages of Sales Cycle",
+"Accepted Price Quote", "C - Later Stages - Purchasing and Contracts Activity",
+"Contract Review / Negotiation", "C - Later Stages - Purchasing and Contracts Activity",
+"Contract Review", "C - Later Stages - Purchasing and Contracts Activity",
+"Partial Paperwork", "C - Later Stages - Purchasing and Contracts Activity",
+"Ready for Signed Contract Approval", "C - Later Stages - Purchasing and Contracts Activity",
+"Negotiation", "C - Later Stages - Purchasing and Contracts Activity",
+"Internal Contract Approval", "C - Later Stages - Purchasing and Contracts Activity",
+"Closed Won", "D - Closed",
+"Closed Lost", "E - Lost or Cancelled",
+"Order Cancelled", "E - Lost or Cancelled",NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Stage High Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

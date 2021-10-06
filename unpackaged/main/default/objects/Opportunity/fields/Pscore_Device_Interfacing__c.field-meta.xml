@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pscore_Device_Interfacing__c</fullName>
+    <description>Formula to derive a score based on complexity of interfacing the device being connected</description>
+    <externalId>false</externalId>
+    <formula>CASE( Contract__r.RALS_Module__c , 
+"Accriva Blood Oximeter (ITC Avoximeter)", 1, 
+"Alere Cardiac Marker", 1, 
+"Helena Labs Coagulation", 1, 
+"Lifehealth Blood Gas (Formerly ITC IRMA)", 1, 
+"Medtronic Coagulation ACT Plus", 1, 
+"Quidel Immunoassays", 1, 
+"Medtronic Coagulation ACT Plus", 1, 
+"Roche Urinalysis", 1, 
+"Siemens Urinalysis Status/Status +", 1, 
+"Siemens Acute Care Diagnostic System", 1, 
+"MTE - Manual Test Entry", 1, 
+"Abbott i-STAT POCz", 2, 
+"Abaxis Chemistry", 2, 
+"IL Blood Gas GEM 3000/3500", 2, 
+"IL Blood Gas GEM 4000", 2, 
+"Medtronic Coagulation HMS PLUS", 2, 
+"Mitsubishi Cardiac Marker", 2, 
+"Radiometer Blood Gas", 2, 
+"Roche Blood Gas", 2, 
+"Siemens Blood Gas", 2, 
+"Alere Hemostasis/Hematology/Immunoassay", 3, 
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>* Pscore Device Interfacing</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

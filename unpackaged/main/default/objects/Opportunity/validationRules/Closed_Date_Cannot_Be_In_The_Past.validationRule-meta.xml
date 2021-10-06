@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Date_Cannot_Be_In_The_Past</fullName>
+    <active>false</active>
+    <description>Validation rule that will prompt user to update close date</description>
+    <errorConditionFormula>AND(
+ OR(
+ $User.ProfileId="00e400000013OhE",
+$User.ProfileId="00e0b000001Nz39",
+$User.ProfileId="00e0b000001S9mY"), 
+ New_Business_Category__c  = "C- New Install, Module Addition, or Facility Add",
+Probability  &gt; 0,
+Probability   &lt; 100,
+Days_to_Close_Date__c&lt;0)</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>The Close Date is in the past, please update the close date</errorMessage>
+</ValidationRule>

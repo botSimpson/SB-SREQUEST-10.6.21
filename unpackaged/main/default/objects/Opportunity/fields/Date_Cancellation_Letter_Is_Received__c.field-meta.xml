@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Cancellation_Letter_Is_Received__c</fullName>
+    <description>Field that will capture the date a cancellation letter is received at the hospital.    We will learn the date from the UPS tracking or certified mail and then populate the date in this field.  This will initially be used in the "backlog project"</description>
+    <externalId>false</externalId>
+    <label>Date Cancellation Letter Is Received</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

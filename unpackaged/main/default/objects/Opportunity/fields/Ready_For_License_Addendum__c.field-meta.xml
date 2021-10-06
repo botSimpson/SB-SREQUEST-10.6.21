@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_For_License_Addendum__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox that will be populated by a customer button, and once populated will trigger the license submission process.</description>
+    <externalId>false</externalId>
+    <label>Ready For License Addendum</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

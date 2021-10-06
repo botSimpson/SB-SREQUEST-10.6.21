@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_Has_3_LIS_Interfaces__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to document if a system has &gt; 3 LIS interfaces. Will be used to factor in project complexity score</description>
+    <externalId>false</externalId>
+    <label>*System Has &gt; 3 LIS Interfaces</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MDN_Trial_Program__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to capture which prospective customers did a trial of MDN products prior to committing to a contract</description>
+    <externalId>false</externalId>
+    <label>MDN Trial Program</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

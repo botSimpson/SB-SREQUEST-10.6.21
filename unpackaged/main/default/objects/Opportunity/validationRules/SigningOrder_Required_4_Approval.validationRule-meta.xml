@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SigningOrder_Required_4_Approval</fullName>
+    <active>true</active>
+    <description>Rule that requires that the order of license signing is required to enter into the license approval process</description>
+    <errorConditionFormula>AND
+(ISPICKVAL( StageName , "Ready For Closeout Approval"), 
+ISBLANK( TEXT(Order_of_License_Signing__c)),
+RecordTypeId&lt;&gt;"0120b000000VQRx", 
+ OR(
+ISPICKVAL( New_Installation_of_Module_Addition__c, "New Installation (No System Installed Currently)"),
+ISPICKVAL(New_Installation_of_Module_Addition__c, "Module Addition to Existing RALS System"),
+ISPICKVAL(New_Installation_of_Module_Addition__c, "Facility Being added to existing Module")) 
+)</errorConditionFormula>
+    <errorDisplayField>Order_of_License_Signing__c</errorDisplayField>
+    <errorMessage>Order of License Signing  Is needed for this opportunity</errorMessage>
+</ValidationRule>

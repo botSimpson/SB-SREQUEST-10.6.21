@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_of__c</fullName>
+    <externalId>false</externalId>
+    <label>Status of License Prep</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Initiated</fullName>
+                <default>false</default>
+                <label>Initiated</label>
+            </value>
+            <value>
+                <fullName>Prepared_For_Review</fullName>
+                <default>false</default>
+                <label>Prepared_For_Review</label>
+            </value>
+            <value>
+                <fullName>Ready To Be Sent To Customer</fullName>
+                <default>false</default>
+                <label>Ready To Be Sent To Customer</label>
+            </value>
+            <value>
+                <fullName>Needs_Modification</fullName>
+                <default>false</default>
+                <label>Needs_Modification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

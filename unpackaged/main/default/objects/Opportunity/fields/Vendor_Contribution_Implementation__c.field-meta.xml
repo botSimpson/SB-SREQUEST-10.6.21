@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_Contribution_Implementation__c</fullName>
+    <description>Field that will track the portion of implementation fees being paid by vendor partner</description>
+    <externalId>false</externalId>
+    <label>Vendor Contribution- Implementation Fees</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

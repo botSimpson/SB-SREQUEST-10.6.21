@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Redeemed__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Redeemed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Support_Tier_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Onsite Installation of a New System</fullName>
+                <default>false</default>
+                <label>Onsite Installation of a New System</label>
+            </value>
+            <value>
+                <fullName>1:1 Remote Training Session</fullName>
+                <default>false</default>
+                <label>1:1 Remote Training Session</label>
+            </value>
+            <value>
+                <fullName>Additional Download Sites (ADS Orders)</fullName>
+                <default>false</default>
+                <label>Additional Download Sites (ADS Orders)</label>
+            </value>
+            <value>
+                <fullName>After Hours Support</fullName>
+                <default>false</default>
+                <label>After Hours Support</label>
+            </value>
+            <value>
+                <fullName>Learning Management System (RALS eQuiz or HealthStream)</fullName>
+                <default>false</default>
+                <label>Learning Management System (RALS eQuiz or HealthStream)</label>
+            </value>
+            <value>
+                <fullName>Onsite Lean Informatics Workflow Assessment</fullName>
+                <default>false</default>
+                <label>Onsite Lean Informatics Workflow Assessment</label>
+            </value>
+            <value>
+                <fullName>Onsite Training</fullName>
+                <default>false</default>
+                <label>Onsite Training</label>
+            </value>
+            <value>
+                <fullName>Test System</fullName>
+                <default>false</default>
+                <label>Test System</label>
+            </value>
+            <value>
+                <fullName>Module Transition</fullName>
+                <default>false</default>
+                <label>Module Transition</label>
+            </value>
+            <value>
+                <fullName>20% Additional Download Sites</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>20% Additional Download Sites</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Gold</controllingFieldValue>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>Onsite Installation of a New System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gold</controllingFieldValue>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>1:1 Remote Training Session</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gold</controllingFieldValue>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>Additional Download Sites (ADS Orders)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>After Hours Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>Learning Management System (RALS eQuiz or HealthStream)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>Onsite Lean Informatics Workflow Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>Onsite Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>Test System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platinum</controllingFieldValue>
+            <valueName>Module Transition</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

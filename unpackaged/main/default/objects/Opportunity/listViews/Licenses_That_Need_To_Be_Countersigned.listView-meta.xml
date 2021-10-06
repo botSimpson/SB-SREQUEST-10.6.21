@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Licenses_That_Need_To_Be_Countersigned</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Billing_City__c</columns>
+    <columns>Billing_State__c</columns>
+    <columns>Product_Formula__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LA_License_Needs_Countersignature__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Countersigned_Has_Been_Uploaded__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Order_of_License_Signing__c</field>
+        <operation>notEqual</operation>
+        <value>"AI signed First, Customer to Countersign and send to AI"</value>
+    </filters>
+    <label>**Licenses That Need To Be Countersigned</label>
+</ListView>

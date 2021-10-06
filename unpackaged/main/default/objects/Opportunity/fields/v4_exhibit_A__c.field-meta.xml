@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>v4_exhibit_A__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>All exhibit A's generated from the version 4.0 template have the "renew at then current pricing" clause that allows us to increase our renewal pricing each year</description>
+    <externalId>false</externalId>
+    <label>New v4.0 exhibit A Sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

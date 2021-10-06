@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Lost_Details__c</fullName>
+    <description>Text area to capture additional information about a deal we lost.  Details will be required in certain scenarios such as when we lose to competition, when we select "other" etc....</description>
+    <externalId>false</externalId>
+    <label>Closed Lost Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

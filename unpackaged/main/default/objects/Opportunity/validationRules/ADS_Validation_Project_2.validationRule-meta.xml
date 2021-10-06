@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADS_Validation_Project_2</fullName>
+    <active>true</active>
+    <description>Validation rules that will require that fille in some information before they can finish out the ADS Validation project records....</description>
+    <errorConditionFormula>AND(
+RecordTypeId="0120b000000MJeL",
+NOT(ISBLANK(Date_Taken_Care_Of_By_Customer__c)),
+OR(
+ISBLANK(Deposit_Invoice__c),
+ISBLANK(Deposit_Invoice_Date__c),
+ISBLANK(TEXT(Delivery_Method__c))))</errorConditionFormula>
+    <errorMessage>- Invoice #, Deposti Invoice Date, and Delivery Metrhod.</errorMessage>
+</ValidationRule>

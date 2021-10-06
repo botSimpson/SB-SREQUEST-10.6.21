@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LA_Term_required_for_approval</fullName>
+    <active>true</active>
+    <description>Will require the License Term field have a value in it to be sent for license approval</description>
+    <errorConditionFormula>(AND(ISPICKVAL(StageName, "Ready For Closeout Approval"), 
+( ISBLANK( License_Term_Years__c ) )))</errorConditionFormula>
+    <errorMessage>The License Term field must be populated, Insert 0 if there is no term associated (One-Time Purchase contracts)</errorMessage>
+</ValidationRule>

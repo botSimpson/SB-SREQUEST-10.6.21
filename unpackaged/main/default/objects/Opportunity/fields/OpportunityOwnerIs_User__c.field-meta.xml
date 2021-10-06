@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpportunityOwnerIs_User__c</fullName>
+    <description>Formula for reporting. Checks to see if the logged in user is the project owner.</description>
+    <externalId>false</externalId>
+    <formula>IF( OR(Opportunity_Owner_ID__c = $User.Id,Regional_Account_Manager__c = $User.Id)=TRUE, 1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OpportunityOwnerIs$User</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

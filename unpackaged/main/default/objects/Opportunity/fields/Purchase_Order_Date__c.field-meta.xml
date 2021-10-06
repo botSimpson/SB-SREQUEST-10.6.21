@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Order_Date__c</fullName>
+    <description>This is a field from LDS contract files.  Not sure yet if this is the date the PO was issued or the date the PO was received by LDS</description>
+    <externalId>false</externalId>
+    <label>Purchase Order Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

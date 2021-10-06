@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backlog_Project_Instructions__c</fullName>
+    <description>Field will provide instructions to stakeholders during Backlog Project Step</description>
+    <externalId>false</externalId>
+    <formula>CASE( Backlog_Project_Step__c , 
+"1", "Read the notes below for any applicable information. Contact the Customer and determine if they will be moving forward or cancelling the order. If moving forward, fill in the expected-start-date field below and click on the Submit-for-Approval button. If cancelling the order, click on the mark for deletion checkbox below and click Submit for approval", 
+
+"C1R", "Read the notes below to find out why your previous request was rejected. Once the issue has been resolved click on the submit-for-approval button to re-enter the approval processes", 
+
+"C3R", "Read the notes below to find out why your previous request was rejected. Once the issue has been resolved click on the submit-for-approval button to re-enter the approval processes", 
+
+"C6R", "Read the notes below to find out why your previous request was rejected. Once the issue has been resolved click on the submit-for-approval button to re-enter the approval processes", 
+
+"C5.5", " TAKE NO ACTION. THE CANCELLATION ORDER HAS BEEN SENT AND WE ARE WAITING FOR 30 DAYS TO SEE IF WE GET A RESPONSE FROM THE CUSTOMER", 
+
+"C5R", " Read the notes below to find out why your previous request was rejected. Once the issue has been resolved click on the submit-for-approval button to re-enter the approval processes", 
+
+"F2R", "Work witTH the customer to have a new Purchase Order issued. Click on the Submit-For-Approval button once we've received it.", 
+
+"F2.5", "TAKE NO ACTION AT THIS TIME, WE ARE WAITING TO GET CLOSER TO THE START DATE BEFORE RESUMING ACTIVITY WITH THIS PROJECT",
+
+
+"F3R", " Read the notes below to find out why your previous request was rejected. Once the issue has been resolved click on the submit-for-approval button to re-enter the approval processes", 
+
+"F4R", " Read the notes below to find out why your previous request was rejected. Once the issue has been resolved click on the submit-for-approval button to re-enter the approval processes", 
+
+"Review the notes provided below as well as the definitions for approval and rejection. Approve or Reject this request based on your review")</formula>
+    <label>Backlog Project Instructions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

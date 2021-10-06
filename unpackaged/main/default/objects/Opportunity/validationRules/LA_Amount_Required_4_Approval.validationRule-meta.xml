@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LA_Amount_Required_4_Approval</fullName>
+    <active>false</active>
+    <description>The Amount Field must be populated, Insert a zero if there are no fees associated with this opportunity</description>
+    <errorConditionFormula>(AND(ISPICKVAL(StageName,"Ready For Closeout Approval"), 
+( ISBLANK(Amount) )))</errorConditionFormula>
+    <errorMessage>The Amount Field must be populated, Insert a zero if there are no fees associated with this opportunity</errorMessage>
+</ValidationRule>

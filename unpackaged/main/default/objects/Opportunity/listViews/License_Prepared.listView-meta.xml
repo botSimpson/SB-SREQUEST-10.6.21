@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_Prepared</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Date_Time_License_Fulfilled__c</columns>
+    <columns>License_Turnaround_Days__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Internal Review - Price Quote and License</value>
+    </filters>
+    <filters>
+        <field>Status_Of_Approval_Request__c</field>
+        <operation>notEqual</operation>
+        <value>Approval Rejected - Order Cancellation,Approval Rejected - Back to Sales/Legal to fix and re-submit</value>
+    </filters>
+    <filters>
+        <field>License_Request_Fulfilled__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>$$  Licenses Prepared  $$</label>
+    <sharedTo>
+        <group>Admin_Team</group>
+        <group>Contracts</group>
+        <group>US_Sales</group>
+    </sharedTo>
+</ListView>

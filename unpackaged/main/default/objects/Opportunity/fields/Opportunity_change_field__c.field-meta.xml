@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_change_field__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>custom field to use as a way of determining if a opp record has been changed during an import via the data loader.  This will test is workflow triggers should be set-off.</description>
+    <externalId>false</externalId>
+    <label>Opportunity change field</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

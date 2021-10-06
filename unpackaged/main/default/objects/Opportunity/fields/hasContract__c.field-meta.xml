@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hasContract__c</fullName>
+    <description>True when contract initiated is populated</description>
+    <externalId>false</externalId>
+    <formula>IF( isnull(Contract_Initiated__c),FALSE, TRUE)</formula>
+    <label>hasContract</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

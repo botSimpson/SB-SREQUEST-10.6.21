@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pscore_Migration_Platform_Change__c</fullName>
+    <description>Formula to provide score based on whether project will require a platform change, server migration consolidation</description>
+    <externalId>false</externalId>
+    <formula>CASE( Migration_Consolidtion_Platform_Change__c , 
+"Involves Server Migration or Consolidation (But no Platform Change)", 2, 
+"Involves Platform Change", 3,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>* Pscore Migration Platform Change</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

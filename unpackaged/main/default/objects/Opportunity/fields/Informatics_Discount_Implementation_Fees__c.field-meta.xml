@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informatics_Discount_Implementation_Fees__c</fullName>
+    <description>Field that will track Alere Informatics discounting of Impelmentation fees.   Will be used in situations where ACSG and Al are working together on strategic accounts and both groups are contributing towards discounts.</description>
+    <externalId>false</externalId>
+    <label>Informatics Discount-Implementation Fees</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

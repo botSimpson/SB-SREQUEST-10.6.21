@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAF_Amount__c</fullName>
+    <description>Field that will be entered by finance to track the total $ Amount associated with a Alere transaction.   The deal may or may not have RALS Connevtitity fees as a part of it......</description>
+    <externalId>false</externalId>
+    <label>PAF Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

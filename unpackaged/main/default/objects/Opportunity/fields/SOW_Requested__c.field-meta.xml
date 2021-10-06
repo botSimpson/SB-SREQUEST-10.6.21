@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOW_Requested__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>field that will document if a SOW has been requested. Sine there might be multiple license requests for any opportunity, we want to document when the first request (and resulting SOW request) is made so donna strode is not prompted multiple times for the same SOW.</description>
+    <externalId>false</externalId>
+    <label>SOW Requested</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
